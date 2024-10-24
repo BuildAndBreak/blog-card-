@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /*colors*/
+
+  --yellow: #f4d04e;
+  --gray-950: #111111;
+  --gray-500: #6b6b6b;
+  --white: #ffffff;
+
+  /*typography*/
+
+  --ff-main: "Figtree", sans-serif;
+  --fw-medium: 500;
+  --fw-extra-bold: 800;
+
+  /*size*/
+
+  --size-200: 1rem;
+  --size-300: 1.5rem;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  font-family: var(--ff-main);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--white);
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 9px 9px 9px black;
+  padding: 1.5em;
+}
+
+.content {
+  max-width: 21rem;
+}
+
+svg {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+span {
+  background-color: var(--yellow);
+  font-weight: var(--fw-extra-bold);
+  border-radius: 5px;
+  padding: 0.5em 0.6em;
+}
+
+.date {
+  color: var(--gray-950);
+  padding-bottom: 0;
+  padding-top: 0.5em;
+}
+
+h1 {
+  font-size: var(--size-300);
+  font-weight: var(--fw-extra-bold);
+  color: var(--gray-950);
+}
+
+h1:active {
+  color: var(--yellow);
+}
+
+.link-html-css {
+  text-decoration: none;
+}
+
+p {
+  color: var(--gray-500);
+  font-size: var(--size-200);
+  padding-bottom: 1em;
+  line-height: 150%;
+}
+
+.author-profile {
+  display: flex;
+}
+
+.profile-picture {
+  width: 2em;
+}
+
+.author {
+  font-weight: var(--fw-extra-bold);
+  display: flex;
+  align-items: center;
+  padding-left: 0.5em;
+}
+
+.attribution {
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 430px) {
+  .container {
+    width: 90%;
+  }
+}
